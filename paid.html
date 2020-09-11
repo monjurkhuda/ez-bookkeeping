@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>EZ Books</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+
+  <body onload="pageRefresh()">
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase.js"></script>
+
+     <div class="navbar">
+      <a class="navlink" href="./index.html">Today</a>
+      <a class="navlink" href="./calendar.html">Calendar</a>
+      <a class="navlink" href="./records.html">Records</a>
+      <a class="navlink" href="./owed.html">Owed</a>
+      <a class="navlink" href="./paid.html">Paid</a>
+    </div>
+
+    <p>Total Payment Collected:</p>
+    <p id="paid_total"></p>
+
+    <p>Paid:</p>
+    <ul id="paid_list"></ul>
+  </body>
+</html>
+
+<script src="/paid.js"></script>

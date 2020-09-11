@@ -1,0 +1,252 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 10px;
+  background: #e4e4e4;
+}
+
+h1 {
+  font-style: italic;
+  color: #373fff;
+}
+
+input {  
+  width: 300px;
+  padding: 12px 20px;
+  margin: 4px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;  
+}
+
+input {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+}
+
+.inputboxes{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.navlink {
+  padding: 7px;
+  background: #ff6f28;  
+  color: white;
+  text-decoration: none;
+}
+
+.navlink:hover {
+  padding: 7px;
+  background: #1e8dff;  
+  color: white;
+  text-decoration: none;
+}
+
+.totaldisplay {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.totalsection {
+  background: #1e8dff;  
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.buttonsdiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;  
+}
+
+.plus_button {
+  background-color: #1FCD38;
+  box-shadow: 0px 10px #0B9F21;
+  font-weight: bold;
+  font-size: 40px;
+  width: 90px;
+  height: 70px;
+  border-style: none;
+  color: white;
+  margin: 5px;
+}
+
+.plus_button:hover {
+  background-color: #33EA4D;
+  box-shadow: 0px 4px #0B9F21;
+  font-weight: bold;
+  font-size: 35px;
+  width: 90px;
+  height: 70px;
+  color: white;
+  margin: 5px;
+}
+
+.minus_button {
+  background-color: #F53838;
+  box-shadow: 0px 10px #C92626;
+  font-weight: bold;
+  font-size: 40px;
+  width: 90px;
+  height: 70px;
+  border-style: none;
+  color: white;
+  margin: 5px;
+}
+
+.minus_button:hover {
+  background-color: #FF7B7B;
+  box-shadow: 0px 4px #C92626;
+  font-weight: bold;
+  font-size: 35px;
+  width: 90px;
+  height: 70px;
+  color: white;
+  margin: 5px;
+}
+
+.list_income_item {
+  background-color: green;
+  padding: 5px;
+  width: 80%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: darkgreen;
+  color: white;
+  list-style: none;
+}
+
+.list_income_note {
+  background-color: DarkSeaGreen;
+  padding: 5px;
+  width: 80%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: darkgreen;
+  color: white;
+  list-style: none;
+}
+
+.list_expenditure_item {
+  background-color: red;
+  padding: 5px;
+  width: 80%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: darkred;
+  color: white;
+  list-style: none;
+}
+
+.list_expenditure_note {
+  background-color: IndianRed;
+  padding: 5px;
+  width: 80%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: darkred;
+  color: white;
+  list-style: none;
+}
+
+.list_owed_item {
+  background-color: red;
+  padding: 5px;
+  width: 80%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: darkred;
+  color: white;
+  list-style: none;
+}
+
+.list_owed_note {
+  background-color: IndianRed;
+  padding: 5px;
+  width: 80%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: darkred;
+  color: white;
+  list-style: none;
+}
+
+.list_owed_date {
+  background-color: Gray;
+  padding: 5px;
+  width: 80%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  color: white;
+  list-style: none;
+}
+
+.list_paid_item {
+  background-color: green;
+  padding: 5px;
+  width: 80%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: darkgreen;
+  color: white;
+  list-style: none;
+}
+
+.list_paid_note {
+  background-color: DarkSeaGreen;
+  padding: 5px;
+  width: 80%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: darkgreen;
+  color: white;
+  list-style: none;
+}
+
+.list_paid_date {
+  background-color: Gray;
+  padding: 5px;
+  width: 80%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  color: white;
+  list-style: none;
+}
+
+.positive_record_row {
+  background-color: green;
+  padding: 5px;
+  width: 80%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: darkgreen;
+  color: white;
+  list-style: none;
+}
+
+.negative_record_row {
+  background-color: red;
+  padding: 5px;
+  width: 80%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: darkred;
+  color: white;
+  list-style: none;
+}
