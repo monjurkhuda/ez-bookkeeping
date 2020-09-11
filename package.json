@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "firebase-tools": "^8.4.3"
+  },
+  "scripts": {
+    "start": "ws --port 3000 --log.format combined --directory . --blacklist '/.env' '/.data' '/.git'"
+  }
+}

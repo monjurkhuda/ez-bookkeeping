@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>EZ Books</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+
+  <body onload="pageRefresh()">
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase.js"></script>
+
+     <div class="navbar">
+      <a class="navlink" href="./index.html">Today</a>
+      <a class="navlink" href="./calendar.html">Calendar</a>
+      <a class="navlink" href="./records.html">Records</a>
+      <a class="navlink" href="./owed.html">Owed</a>
+      <a class="navlink" href="./paid.html">Paid</a>
+    </div>
+
+    <p>Total Owed To Me:</p>
+    <p id="owed_total"></p>
+
+    <input
+      id="cash_input"
+      placeholder="Owed Amount"
+      type="number"
+      name="test"
+      min="1"
+      step="0.01"
+      oninput="validity.valid||(value='');"
+    />
+    <input id="note_input" placeholder="Notes (Optional)" />
+
+    <br />
+
+    <input class="plus_button" type="button" value="+" onclick="owedSubmission()" />
+
+    <br />
+
+    <p>Owed To Me:</p>
+    <ul id="owed_list"></ul>
+  </body>
+</html>
+
+<script src="/owed.js"></script>

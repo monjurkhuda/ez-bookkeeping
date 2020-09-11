@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>EZ Books</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+
+  <body onload="pageRefresh()">
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase.js"></script>
+
+     <div class="navbar">
+      <a class="navlink" href="./index.html">Today</a>
+      <a class="navlink" href="./calendar.html">Calendar</a>
+      <a class="navlink" href="./records.html">Records</a>
+      <a class="navlink" href="./owed.html">Owed</a>
+      <a class="navlink" href="./paid.html">Paid</a>
+    </div>   
+    
+    <div class="totaldisplay">
+      <div class="totalsection" id="total_history"></div>
+    </div>
+    
+    <ul id="income_list"></ul>
+   
+    <ul id="expenditure_list"></ul>
+
+    <input
+      id="cash_input"
+      type="number"
+      name="test"
+      min="1"
+      step="0.01"
+      oninput="validity.valid||(value='');"
+    />
+    <input id="note_input" placeholder="Notes (Optional)" />
+
+    <br />
+
+    <input class="minus_button" type="button" value="-" onclick="minusSubmission()" />
+    <input class="plus_button" type="button" value="+" onclick="plusSubmission()" />
+
+    <br />
+  </body>
+</html>
+
+<script src="/history.js"></script>
